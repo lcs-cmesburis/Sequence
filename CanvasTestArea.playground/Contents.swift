@@ -23,10 +23,11 @@ import PlaygroundSupport
 // Create a new canvas
 let canvas = Canvas(width: 300, height: 500)
 
+canvas.drawShapesWithBorders = false
 
 //Ears
-canvas.drawEllipse(centreX: 90, centreY: 370, width: 70, height: 70)
-canvas.drawEllipse(centreX: 210, centreY: 370, width: 70, height: 70)
+canvas.drawEllipse(centreX: 90, centreY: 370, width: 65, height: 65)
+canvas.drawEllipse(centreX: 210, centreY: 370, width: 65, height: 65)
 
 //Head
 canvas.fillColor = Color.white
@@ -46,8 +47,7 @@ canvas.drawEllipse(centreX: 120, centreY: 310, width: 10, height: 10)
 
 
 //Red spots
-canvas.fillColor = Color(hue: 350, saturation: 80, brightness: 75, alpha: 60)
-canvas.drawShapesWithBorders = false
+canvas.fillColor = Color(hue: 350, saturation: 50, brightness: 75, alpha: 60)
 canvas.drawEllipse(centreX: 100, centreY: 260, width: 30, height: 20)
 canvas.drawEllipse(centreX: 200, centreY: 260, width: 30, height: 20)
 
@@ -62,7 +62,7 @@ canvas.drawEllipse(centreX: 165, centreY: 250, width: 27, height: 25)
 
 //Nose
 canvas.fillColor = Color.black
-canvas.drawEllipse(centreX: 150, centreY: 260, width: 30, height: 15)
+canvas.drawEllipse(centreX: 150, centreY: 260, width: 35, height: 15)
 
 
 // This code is necessary to see the result in the Assistant Editor at right
